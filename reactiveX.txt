@@ -1,0 +1,28 @@
+
+
+reactive
+
+publishers
+	- Flowable: A Publisher that emits 0..N elements, and then completes successfully or with an error.
+	- Observable: Similar to Flowables but without a backpressure strategy. They were introduced in RxJava 1.x.
+	- Single: It completes with a value successfully or an error.(doesn’t have onComplete callback, instead onSuccess(val)).
+	- Maybe: It completes with/without a value or completes with an error.
+	- Completable: It just signals if it has completed successfully or with an error.
+
+create stream => factory methods of publishers (just,create etc)
+   |
+  \|/
+
+Apply  operators (optional)
+
+	 |
+	\|/
+
+subscribers subscribe to the stream
+
+ - onNext
+ - OnError
+ - OnComplete
+ - onsubscribe(disposable/subscription)
+
+
